@@ -1,0 +1,43 @@
+$primary-color: #1e90ff;
+$text-color: #fff;
+$success-color: #66fa59;
+$draw-color: #afc9e7;
+
+@mixin display-flex($justify-content: center, $align-items: center) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin game-page-container {
+    min-height: calc(100vh - 4rem);
+    text-align: center;
+
+    h1 {
+        margin: 0;
+        padding: 1rem;
+    }
+}
+
+@mixin status-message {
+    margin: 1rem auto;
+    font-size: calc(1rem + 0.5vw);
+    font-weight: 600;
+    text-align: center;
+}
+
+@mixin reset-btn {
+    width: 20rem;
+    padding: 1rem;
+    display: block;
+    margin: 1rem auto;
+    font-size: calc(0.6rem + 1vw);
+    color: $text-color;
+    border: none;
+    background-color: $primary-color;
+
+    &:active {
+        background-color: $text-color;
+        color: $primary-color;
+    }
+}
