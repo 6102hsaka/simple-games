@@ -1,0 +1,8 @@
+@import "./common.scss";
+
+.main {
+    @include game-page-container;
+    @include display-flex(space-around);
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}

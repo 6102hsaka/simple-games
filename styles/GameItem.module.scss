@@ -1,13 +1,27 @@
+@import "./common.scss";
+
 .container {
-    width: 20rem;
-    height: 18rem;
-    position: relative;
-    border-radius: 0.25rem;
+    display: block;
+    height: 20rem;
+    width: 17rem;
+    border: 0.25rem;
     box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
         0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
 
-    .info {
-        position: absolute;
-        bottom: 0;
+    .imageContainer {
+        position: relative;
+        width: 17rem;
+        height: 17rem;
     }
+
+    .description {
+        color: $secondary-color;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+}
+
+.container:hover {
+    opacity: 0.75;
+    transform: scale(1.05);
 }

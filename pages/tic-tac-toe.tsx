@@ -83,6 +83,7 @@ const TicTacToe: NextPage = () => {
 
     const resetGame = () => {
         setPlayer("X");
+        setStatusMessage(`Player X turn`);
         setGameActive(true);
         cellRefs.forEach((cellRef) => {
             if (cellRef.current) {
